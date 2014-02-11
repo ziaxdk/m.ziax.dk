@@ -33,6 +33,7 @@
       var map = zmap.map,
           layer = L.featureGroup().addTo(map),
           marker = L.marker([50.5, 30.5]).addTo(layer);
+          circle = L.circle([50.5, 30.5], 200).addTo(layer);
 
 
 
@@ -41,6 +42,10 @@
 
       function success(pos) {
         marker.setLatLng([ pos.coords.latitude, pos.coords.longitude ]);
+        circle.setRadius(pos.coords.accuracy/10);
+        circle.setLatLng([ pos.coords.latitude, pos.coords.longitude ]);
+
+        map.fitBounds(circle.getBounds());
       }
 
       function error() {
