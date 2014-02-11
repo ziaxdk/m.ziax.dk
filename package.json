@@ -1,0 +1,23 @@
+{
+  "name": "m.ziax.dk",
+  "version": "0.0.0",
+  "description": "Mobile version of ziax.dk and some",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ziaxdk/m.ziax.dk.git"
+  },
+  "author": "ZiaxDK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ziaxdk/m.ziax.dk/issues"
+  },
+  "homepage": "https://github.com/ziaxdk/m.ziax.dk",
+  "dependencies": {
+    "socket.io": "~0.9.16",
+    "express": "~3.4.8"
+  }
+}
