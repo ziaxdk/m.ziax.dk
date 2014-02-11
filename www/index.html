@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link href="lib/css/ionic.css" rel="stylesheet">
     <title>m.ziax.dk</title>
-  </head>
-  <body>
+
+    <link href="lib/css/ionic.css" rel="stylesheet">
+
     <script src="phonegap.js"></script>
     <script src="lib/js/ionic.js"></script>
     <script src="lib/js/angular/angular.js"></script>
@@ -22,5 +22,25 @@
         alert('ready');
       }
     </script>
+  </head>
+  <body ng-app="starter" animation="slide-left-right-ios7">
+
+    <!-- 
+      The nav bar that will be updated as we navigate between views
+      Additional attributes set its look, nav-bar animation and icons
+      Icons provided by Ionicons: http://ionicons.com/ 
+    -->
+    <nav-bar type="bar-positive" 
+             animation="nav-title-slide-ios7" 
+             back-button-type="button-icon" 
+             back-button-icon="ion-ios7-arrow-back"></nav-bar>
+
+    <!-- 
+      The views will be rendered in the <nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <nav-view></nav-view>
+
   </body>
 </html>
