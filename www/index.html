@@ -9,5 +9,12 @@
     </head>
     <body>
         <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript">
+          document.addEventListener("deviceready", onDeviceReady, false);
+
+          function onDeviceReady() {
+            alert('ready');
+          }
+        </script>
     </body>
 </html>
