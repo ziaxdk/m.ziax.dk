@@ -9,6 +9,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers', '
 
 
 .config(function($stateProvider, $urlRouterProvider) {
+  L.Icon.Default.imagePath = "/lib/images";
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
