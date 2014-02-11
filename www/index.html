@@ -9,8 +9,8 @@
     <link href="lib/leaflet.css" rel="stylesheet">
 
     <style type="text/css">
-      .scroll { height: 100%; }
-      .leaflet-tile-container img {-webkit-backface-visibility: hidden; }
+      /*.scroll { height: 100%; }*/
+      /*.leaflet-tile-container img {-webkit-backface-visibility: hidden; }*/
     </style>
 
     <script src="phonegap.js"></script>
@@ -31,6 +31,9 @@
 
   </head>
   <body ng-app="starter" animation="slide-left-right-ios7">
+    <div z-map style="position: fixed; top: 44px; bottom: 200px; left: 0; right: 0; z-index: 10000">
+    </div>
+
 
     <!-- 
       The nav bar that will be updated as we navigate between views
